@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,6 +16,61 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <header class="w-4/5 mx-auto">
+      <nav class="raleway">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start w-full">
+            <div class="dropdown grow min-[400px]:grow-0">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination </a></li>
+                <li><a>Search </a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-xl hover:bg-white">
+              <h1 class="font-bold lg:font-extrabold lg:text-3xl">
+                Online Ticket
+              </h1></a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="hover:bg-white">Home</a></li>
+              <li><a class="hover:bg-white">About</a></li>
+              <li><a class="hover:bg-white">Destination </a></li>
+              <li><a class="hover:bg-white">Search </a></li>
+            </ul>
+          </div>
+          <div class="hidden min-[400px]:flex navbar-end">
+            <a
+              class="btn bg-[#1dd1001A] text-[#1DD100] border border-[#1DD100] rounded-xl hover:bg-[#1dd1001A] hover:border-[#1DD100]"
+              >Bus<img src="./assets/images/bus-icon.png" alt="bus-icon"
+            /></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
     <!-- below javaScript file link -->
     <script src="./assets/script/utility.js"></script>
     <script src="./assets/script/index.js"></script>
