@@ -55,21 +55,114 @@
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
-              <li><a class="hover:bg-white">Home</a></li>
-              <li><a class="hover:bg-white">About</a></li>
-              <li><a class="hover:bg-white">Destination </a></li>
-              <li><a class="hover:bg-white">Search </a></li>
+              <li>
+                <a class="hover:bg-white font-medium text-[#030712B2] text-lg"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a class="hover:bg-white font-medium text-[#030712B2] text-lg"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a class="hover:bg-white font-medium text-[#030712B2] text-lg"
+                  >Destination
+                </a>
+              </li>
+              <li>
+                <a class="hover:bg-white font-medium text-[#030712B2] text-lg"
+                  >Search
+                </a>
+              </li>
             </ul>
           </div>
           <div class="hidden min-[400px]:flex navbar-end">
             <a
-              class="btn bg-[#1dd1001A] text-[#1DD100] border border-[#1DD100] rounded-xl hover:bg-[#1dd1001A] hover:border-[#1DD100]"
+              class="btn text-lg bg-[#1dd1001A] text-[#1DD100] border border-[#1DD100] rounded-xl hover:bg-[#1dd1001A] hover:border-[#1DD100]"
               >Bus<img src="./assets/images/bus-icon.png" alt="bus-icon"
             /></a>
           </div>
         </div>
       </nav>
     </header>
+
+    <main class="w-4/5 mx-auto my-8">
+      <!-- hero area  -->
+      <section
+        class="inter bg-[url('./assets/images/banner.png')] min-h-[80vh] lg:min-h-[500px] bg-no-repeat bg-center bg-cover rounded-3xl"
+      >
+        <!-- content of hero section -->
+        <div class="space-y-6 flex flex-col items-center p-4 pt-6 lg:pt-20">
+          <h1
+            class="raleway text-white text-4xl md:text-6xl font-extrabold text-center"
+          >
+            End-to-End Travel with
+          </h1>
+          <h1
+            class="raleway text-[#1DD100] text-4xl md:text-6xl font-extrabold text-center"
+          >
+            Comfy Paribahan
+          </h1>
+          <p class="text-lg text-white lg:w-3/5 text-center">
+            Yes, you can run unit tests and view the results directly within the
+            app. The integrated testing features allow for a streamlined .
+          </p>
+          <a
+            class="btn raleway font-bold text-lg bg-[#1DD100] text-[#030712] border border-[#1DD100] rounded-xl hover:bg-[#1DD100] hover:border-[#1DD100]"
+            >Buy Tickets</a
+          >
+        </div>
+        <!-- showup info card container-->
+        <div class="hidden lg:flex justify-center">
+          <div class="flex gap-5 relative bottom-[-60px]">
+            <!-- single card -->
+            <div
+              class="flex gap-2 bg-white rounded-2xl border-b-4 border-[#1DD100] px-4 py-5"
+            >
+              <div class="">
+                <img class="" src="./assets/images/people.png" alt="people" />
+              </div>
+              <div class="">
+                <h2 class="font-bold text-2xl lg:text-3xl text-[#030712]">
+                  500K+
+                </h2>
+                <p class="lg:text-lg text-[#03071299]">Registered users</p>
+              </div>
+            </div>
+            <!-- single card -->
+            <div
+              class="flex gap-1 lg:gap-2 bg-white rounded-2xl border-b-4 border-[#1DD100] px-4 py-5"
+            >
+              <div class="">
+                <img src="./assets/images/ticket-cupon.png" alt="cupon" />
+              </div>
+              <div class="">
+                <h2 class="font-bold text-2xl lg:text-3xl text-[#030712]">
+                  1.7 lacks
+                </h2>
+                <p class="lg:text-lg text-[#03071299]">Tickets sold</p>
+              </div>
+            </div>
+            <!-- single card -->
+            <div
+              class="flex gap-2 bg-white rounded-2xl border-b-4 border-[#1DD100] px-4 py-5"
+            >
+              <div class="">
+                <img src="./assets/images/stoppage.png" alt="people" />
+              </div>
+              <div class="">
+                <h2 class="font-bold text-2xl lg:text-3xl text-[#030712]">
+                  80K+
+                </h2>
+                <p class="lg:text-lg text-[#03071299]">Rental partners</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="w-4/5 mx-auto"></footer>
 
     <!-- below javaScript file link -->
     <script src="./assets/script/utility.js"></script>
