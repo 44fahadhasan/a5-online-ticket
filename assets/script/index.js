@@ -1,12 +1,12 @@
 function seatSelection() {
   for (const singleSeat of allSeats) {
     singleSeat.addEventListener("click", function (event) {
-      singleSeat.setAttribute("class", "bg-[#1DD100]");
       const seatName = event.target.innerText;
 
       const buySeat = getElementWithId("selected-seat-num").textContent;
 
       if (buySeat < 4) {
+        singleSeat.setAttribute("class", "bg-[#1DD100]");
         //  avilable seat innertext set
         getElementWithId("total-seat-num").innerText = decrementSet();
         // selected seat innertext set
