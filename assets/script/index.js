@@ -23,7 +23,6 @@ seatSelection();
 
 function calculateSeatPrice() {
   let perSeatPrice = 550;
-  let totalSeatPrice = 0;
   totalSeatPrice = perSeatPrice * selectedSet;
 
   getElementWithId("total-price").innerText = totalSeatPrice;
