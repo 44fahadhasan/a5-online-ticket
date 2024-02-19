@@ -105,10 +105,13 @@
             Comfy Paribahan
           </h1>
           <p class="text-lg text-white lg:w-3/5 text-center">
-            Yes, you can run unit tests and view the results directly within the
-            app. The integrated testing features allow for a streamlined .
+            You can buy tickets from anywhere with an internet connection,
+            whether you're at home, at work, or on the go. There's no need to
+            visit a physical ticket office or wait on hold to speak with a
+            representative.
           </p>
           <a
+            href="#parubahan"
             class="btn raleway font-bold text-lg bg-[#1DD100] text-[#030712] border border-[#1DD100] rounded-xl hover:bg-[#1DD100] hover:border-[#1DD100]"
             >Buy Tickets</a
           >
@@ -197,7 +200,7 @@
             <div
               class="space-y-1 bg-[url('./assets/images/cupon-devider.png')] bg-[length:auto_100%] bg-no-repeat bg-right-top p-4 pr-6 lg:p-12 lg:pr-20"
             >
-              <h1 class="text-3xl lg:text-4xl font-black">15% OFF</h1>
+              <h1 class="text-3xl lg:text-4xl font-black">20% OFF</h1>
               <h4 class="text-lg font-semibold">on your next purchase</h4>
               <p class="text-[#03071280] text-base font-medium">
                 use by January 2024
@@ -205,7 +208,7 @@
             </div>
             <!-- cuppon right side -->
             <div class="raleway space-y-1 pr-4 lg:p-10">
-              <h1 class="text-3xl font-bold">NEW15</h1>
+              <h1 class="text-2xl font-bold">Couple 20</h1>
               <h4 class="text-[#03071266] text-lg font-medium">Coupon Code</h4>
             </div>
           </div>
@@ -228,6 +231,7 @@
         <!-- text content  -->
         <div class="space-y-4 pb-12">
           <h2
+            id="parubahan"
             class="raleway text-center font-bold text-3xl lg:text-4xl text-[#030712]"
           >
             Comfy Paribahan
@@ -235,8 +239,10 @@
           <p
             class="inter text-lg text-[#03071299] lg:w-3/5 text-center mx-auto"
           >
-            Yes, you can run unit tests and view the results directly within the
-            app. The integrated testing features allow for a streamlined .
+            You can buy tickets from anywhere with an internet connection,
+            whether you're at home, at work, or on the go. There's no need to
+            visit a physical ticket office or wait on hold to speak with a
+            representative.
           </p>
         </div>
 
@@ -272,7 +278,7 @@
                 <h4
                   class="inter font-semibold text-[#1DD100] text-base sm:text-lg"
                 >
-                  <span id="total-set-num" class="">40</span>
+                  <span id="total-seat-num">40</span>
                   Seat Available
                 </h4>
               </div>
@@ -397,7 +403,7 @@
                       <!-- row  -->
                       <tr>
                         <th>A</th>
-                        <td class="bg-[#1DD100]">A1</td>
+                        <td>A1</td>
                         <td>A2</td>
                       </tr>
                       <!-- row  -->
@@ -558,8 +564,8 @@
               >
                 <p class="text-centertext-[#030712] font-medium text-base">
                   Seat
-                  <span id="selected-set-num" class="text-[#1DD100] ml-1"
-                    >8</span
+                  <span id="selected-seat-num" class="text-[#1DD100] ml-1"
+                    >0</span
                   >
                 </p>
                 <p class="text-centertext-[#030712] font-medium text-base">
@@ -570,24 +576,8 @@
                 </p>
               </div>
               <!-- set ifo -->
-              <div class="" id="selected-set-container">
-                <!-- daynamic seat  -->
-                <div
-                  class="text-center lg:text-left lg:pl-[17%] grid grid-cols-3 pt-4"
-                >
-                  <p
-                    class="text-centertext-[#03071299] font-medium text-base"
-                    id="seat-name"
-                  >
-                    C2
-                  </p>
-                  <p class="text-centertext-[#03071299] font-medium text-base">
-                    Economoy
-                  </p>
-                  <p class="text-centertext-[#03071299] font-medium text-base">
-                    550
-                  </p>
-                </div>
+              <div id="selected-set-container">
+                <!-- bleow daynamic element geanreate  -->
               </div>
               <!-- toatal seat & price title  -->
               <div
@@ -601,9 +591,7 @@
                 <p
                   class="grow text-center text-[#030712] font-medium text-base"
                 >
-                  BDT<span id="total-price" class="text-[#1DD100] ml-1"
-                    >1100</span
-                  >
+                  BDT<span id="total-price" class="text-[#1DD100] ml-1">0</span>
                 </p>
               </div>
               <!-- cuppon input -->
@@ -616,11 +604,14 @@
                   placeholder="Have any copupon?"
                   class="input input-bordered lg:border-none lg:focus:outline-none w-full text-sm"
                 />
-                <a
+                <button
+                  disabled
+                  onclick="inputValue()"
                   id="cupon-apply-btn"
                   class="btn raleway font-semibold text-lg bg-[#1DD100] text-white border border-[#1DD100] rounded-xl hover:bg-[#1DD100] hover:border-[#1DD100] lg:ml-3 lg:mb-0 lg:mr-3"
-                  >Apply</a
                 >
+                  Apply
+                </button>
               </div>
               <!-- grand seat & price title -->
               <div class="flex pt-4 pb-8">
@@ -633,7 +624,7 @@
                   class="grow text-center text-[#030712] font-medium text-base"
                 >
                   BDT<span id="grand-total-price" class="text-[#1DD100] ml-1"
-                    >1100</span
+                    >0</span
                   >
                 </p>
               </div>
@@ -663,7 +654,8 @@
                   >
                 </div>
                 <input
-                  type="tel"
+                  id="phone-number"
+                  type="number"
                   placeholder="Enter your phone number"
                   required
                   class="input input-bordered w-full"
@@ -682,12 +674,16 @@
                   class="input input-bordered w-full"
                 />
               </label>
-              <button
-                class="my-5 w-full btn bg-[#1DD100] hover:bg-[#1DD100] text-white font-extrabold text-base sm:text-lg"
-                raleway
-              >
-                Next
-              </button>
+              <a href="./mudal.html">
+                <button
+                  disabled
+                  id="next-btn"
+                  class="my-5 w-full btn bg-[#1DD100] hover:bg-[#1DD100] text-white font-extrabold text-base sm:text-lg"
+                  raleway
+                >
+                  Next
+                </button>
+              </a>
               <!-- terams and policy -->
               <div
                 class="flex flex-col gap-4 items-center lg:flex-row lg:gap-0 justify-around"

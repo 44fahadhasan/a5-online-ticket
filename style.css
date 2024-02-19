@@ -16,4 +16,5 @@ tr td {
   border-radius: 9px;
   text-align: center;
   background-color: #f7f8f8;
+  cursor: pointer;
 }
